@@ -1,0 +1,54 @@
+
+
+/* import bootstrap css for use underneath my style */
+
+@import url(assets/css/bootstrap.css);
+
+/*my custom style*/
+
+/*this defines the text colour and background image for my whole site*/
+body{
+	background-image: url(assets/img/tex2res4.png);
+
+	color: #888888;
+
+
+}
+/*this defines the navbar background image*/
+.navbar-inner {
+		background-image: url(assets/img/tex2res4.png);
+}
+
+/* this defines the hero unit background image and text colour*/
+.hero-unit {
+	background-image: url(assets/img/liverpool.jpg);
+	color: #FFFFFF;
+	
+
+}
+
+/* this defines the underline for the access keys*/
+a em {
+	  font-style: normal;
+      text-decoration: underline;
+    }
+
+/*a:first-letter { text-decoration: underline;}*/
+
+/*a:link {color:#FF0000;}      /* unvisited link */
+/*a:visited {color:#00FF00;}  /* visited link */
+/*a:hover {color:#FF00FF;}  
+a:active {color:#0000FF;} */ 
+
+
+
+
+
+
+
+
+
+
+}
+
+
