@@ -8,7 +8,7 @@
 
 /*this defines the text colour and background image for my whole site*/
 body{
-	background-image: url(assets/img/tex2res4.png);
+	background-image: url(assets/img/concrete_wall_2.png);
 
 	color: #888888;
 
@@ -16,13 +16,13 @@ body{
 }
 /*this defines the navbar background image*/
 .navbar-inner {
-		background-image: url(assets/img/tex2res4.png);
+		background-image: url(assets/img/concrete_wall_2.png);
 }
 
 /* this defines the hero unit background image and text colour*/
 .hero-unit {
-	background-image: url(assets/img/liverpool.jpg);
-	color: #FFFFFF;
+	/*background-image: url(assets/img/liverpool.jpg);*/
+	color: #AAAAAA;
 	
 
 }
