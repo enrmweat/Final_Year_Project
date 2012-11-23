@@ -38,7 +38,10 @@ a em {
 /*a:link {color:#FF0000;}      /* unvisited link */
 /*a:visited {color:#00FF00;}  /* visited link */
 /*a:hover {color:#FF00FF;}  
-a:active {color:#0000FF;} */ 
+a:active {color:#0000FF;} */
+
+/* Mask for background, by default is not display */
+
 
 
 

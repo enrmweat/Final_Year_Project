@@ -47,7 +47,7 @@
             <span class="icon-bar"></span>
           </a>
           <!-- this is my main section within the navbar, it contains all the page navigation links -->
-          <a class="brand" href="index.html" title="Return to Home Page">Liverpool Wi-Fi</a>
+          <a class="brand" href="index.html" title="Return to Home Page"><img src="assets/img/Logo.png"></a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li ><a href="index.html" accesskey="h" title="Home Page"><i class="icon-home icon-inverse"></i><em>H</em>ome</a></li>
@@ -68,11 +68,22 @@
                   </ul>
             </ul>
             <!-- this displays the sign in sction on the right hand side of the navbar -->
-            <form class="navbar-form pull-right" action="index.html">
-              <input class="span2" type="text" title="Please Enter Your Email Address" placeholder="Email">
-              <input class="span2" type="password" title="Please Enter Your Password" placeholder="Password">
-              <button <input type="submit" value="Submit" title="Sign In">Sign in</button>
-            </form>
+                  <ul class="nav pull-right">
+          <li class="divider-vertical"></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" href="#" data-toggle="dropdown" title="Sign In">Sign In <strong class="caret"></strong></a>
+            <div class="dropdown-menu" style="padding: 15px; padding-bottom: 10px;">
+              <!-- Login form here -->
+            <form action="index.html">
+                            <!--Username-->
+            <input style="margin-bottom: 15px;" type="text" placeholder="Username" size="30" title="Userame"/> 
+            <!--Password-->
+            <input style="margin-bottom: 15px;" type="password" placeholder="Password" name="user[password]" size="30" title="Password"/>
+            <!--Sign In-->
+            <button <input class= "btn btn-primary"  name="commit" value="Sign In" title="Sign In">Sign In</button>
+          </form>
+          </div>
+           
            
           </div><!--/.nav-collapse -->
         </div>
@@ -126,6 +137,15 @@
     <!-- added new jquery files to allow for JS actions, for dropdown actions and other java actions -->
     <script text/javascript src="assets/js/jquery-1.8.2.min.js"></script>
     <script text/javascript src="assets/js/bootstrap.min.js"></script>
+       <script language ="javascript">
+    $(function(){
+      $('.dropdown-toggle').dropdown();
+    $('.dropdown input, .dropdown label').click(function (e) {
+        e.stopPropagation();
+      });
+  });
+
+  </script>
 
 
      

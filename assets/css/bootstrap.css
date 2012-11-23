@@ -1130,6 +1130,7 @@ textarea {
 label {
   display: block;
   margin-bottom: 5px;
+  color: #AAAAAA
 }
 select,
 textarea,
@@ -3298,7 +3299,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .brand {
   float: left;
   display: block;
-  padding: 10px 20px 10px;
+  padding: 0px 0px 0px;
   margin-left: -20px;
   font-size: 20px;
   font-weight: 200;
@@ -3321,8 +3322,8 @@ input[type="submit"].btn.btn-mini {
 .navbar .divider-vertical {
   height: 40px;
   margin: 0 9px;
-  border-left: 1px solid #049cdb;
-  border-right: 1px solid #ffffff;
+  /*border-left: 1px solid #049cdb;
+  border-right: 1px solid #ffffff;*/
 }
 .navbar .btn,
 .navbar .btn-group {

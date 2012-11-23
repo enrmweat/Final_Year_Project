@@ -48,7 +48,7 @@
             <span class="icon-bar"></span>
           </a>
           <!-- this is my main section within the navbar, it contains all the page navigation links -->
-          <a class="brand" href="index.html" title="Return to Home Page">Liverpool Wi-Fi</a>
+          <a class="brand" href="index.html" title="Return to Home Page"><img src="assets/img/Logo.png"></a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active"><a href="index.html" accesskey="h" title="Home Page"><i class="icon-home icon-inverse"></i><em>H</em>ome</a></li>
@@ -69,11 +69,44 @@
                   </ul>
             </ul>
             <!-- this displays the sign in sction on the right hand side of the navbar -->
-            <form class="navbar-form pull-right" action="index.html">
-              <input class="span2" type="text" title="Please Enter Your Email Address" placeholder="Email">
-              <input class="span2" type="password" title="Please Enter Your Password" placeholder="Password">
-              <button <input type="submit" value="Submit" title="Sign In">Sign in</button>
-            </form>
+          <ul class="nav pull-right">
+          <li class="divider-vertical"></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" href="#" data-toggle="dropdown" title="Sign In">Sign In <strong class="caret"></strong></a>
+            <div class="dropdown-menu" style="padding: 15px; padding-bottom: 10px;">
+              <!-- Login form here -->
+            <form action="index.html">
+           <!--Username-->
+            <input style="margin-bottom: 15px;" type="text" placeholder="Username" size="30" title="Username"/> 
+            <!--Password-->
+            <input style="margin-bottom: 15px;" type="password" placeholder="Password" name="user[password]" size="30" title="Password"/>
+            <!--Sign In-->
+            <button <input class= "btn btn-primary"  name="commit" value="Sign In" title="Sign In">Sign In</button>
+          </form>
+          </div>
+            <ul class="nav pull-rigt">
+          <li class="divider-vertical"></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" href="#" data-toggle="dropdown" title="Sign In">Register <strong class="caret"></strong></a>
+            <div class="dropdown-menu" style="padding: 15px; padding-bottom: 10px;">
+              <form id='register' action='register.php' method='post'
+              accept-charset='UTF-8'>
+              <fieldset >
+              <legend>Register</legend>
+              <input type='hidden' name='submitted' id='submitted' value='1'/>
+              <label for='name' >Your Full Name*: </label>
+              <input type='text' name='name' id='name' maxlength="50" />
+              <label for='email' >Email Address*:</label>
+              <input type='text' name='email' id='email' maxlength="50" />
+              <label for='username' >UserName*:</label>
+              <input type='text' name='username' id='username' maxlength="50" />
+              <label for='password' >Password*:</label>
+              <input type='password' name='password' id='password' maxlength="50" />
+              <input type='submit' name='Submit' value='Submit' />
+              </fieldset>
+              </form>
+            </div>
+
            
           </div><!--/.nav-collapse -->
         </div>
@@ -84,26 +117,27 @@
 
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <h1>Welcome!!</h1>
+        <p>This website has been set-up to provide easy access to information regarding Wi-Fi hotspots in and around the Liverpool City Area.</p>
         <p><a class="btn btn-large">Learn more &raquo;</a></p>
       </div>
 
       <!-- Example row of columns -->
       <div class="row">
         <div class="span4">
-          <h2>Heading</h2>
+          <h2>About!</h2>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
           <p><a class="btn" href="#">View details &raquo;</a></p>
         </div>
         <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <h2>Head Over to the Map</h2>
+          <p><br>
+          <br><br><br><br> </p>
+          <p><a class="btn" href="#">Hotspot Map &raquo;</a></p>
        </div>
         <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <h2>Contact Me!</h2>
+          <p>If you wish to contact me regarding this service or with any problems/updates regarding the location of any Wi-Fi Hotspots, whether it be their not where they're supposed to be or are no longer there. Please Use the link below to contact me using my contact form!. Thankyou</p>
           <p><a class="btn" href="#">View details &raquo;</a></p>
         </div>
       </div>
@@ -123,6 +157,15 @@
     <!-- added new jquery files to allow for JS actions, for dropdown actions and other java actions -->
     <script text/javascript src="assets/js/jquery-1.8.2.min.js"></script>
     <script text/javascript src="assets/js/bootstrap.min.js"></script>
+   <script language ="javascript">
+    $(function(){
+      $('.dropdown-toggle').dropdown();
+    $('.dropdown input, .dropdown label').click(function (e) {
+        e.stopPropagation();
+      });
+  });
+
+  </script>
 
 
      
