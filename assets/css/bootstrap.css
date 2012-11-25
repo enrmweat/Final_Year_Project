@@ -3460,9 +3460,9 @@ input[type="submit"].btn.btn-mini {
   float: left;
 }
 .navbar .nav > li > a {
-  float: none;
+  /*float:left;*/
   padding: 10px 15px 10px;
-  color: #AAAAAA;
+  color:;
   text-decoration: none;
   text-shadow: 0 1px 0 #ffffff;
 }
@@ -3472,7 +3472,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover {
   background-color: transparent;
-  color: #666666;
+  color: ;
   text-decoration: none;
 }
 .navbar .nav > .active > a,
@@ -3518,8 +3518,8 @@ input[type="submit"].btn.btn-mini {
 .navbar .btn-navbar.disabled,
 .navbar .btn-navbar[disabled] {
   color: #ffffff;
-  background-color: #048ac2;
-  *background-color: #0378a9;
+  /*background-color: #048ac2;
+  *background-color: #0378a9;*/
 }
 .navbar .btn-navbar:active,
 .navbar .btn-navbar.active {
@@ -4561,7 +4561,7 @@ a.thumbnail:hover {
   clear: both;
   font-weight: normal;
   line-height: 20px;
-  color: #333333;
+  color: #AAAAAA;
   white-space: nowrap;
 }
 .dropdown-menu li > a:hover,
@@ -5747,7 +5747,7 @@ button.close {
   .nav-collapse .dropdown-menu a {
     padding: 9px 15px;
     font-weight: bold;
-    color: #777777;
+    color: #FFFFFF;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -5764,7 +5764,7 @@ button.close {
   }
   .nav-collapse .nav > li > a:hover,
   .nav-collapse .dropdown-menu a:hover {
-    background-color: #049cdb;
+    background-color: #AAAAAA;
   }
   .navbar-inverse .nav-collapse .nav > li > a:hover,
   .navbar-inverse .nav-collapse .dropdown-menu a:hover {

@@ -50,7 +50,7 @@
           <!-- this is my main section within the navbar, it contains all the page navigation links -->
           <a class="brand" href="index.html" title="Return to Home Page"><img src="assets/img/Logo.png"></a>
           <div class="nav-collapse collapse">
-            <ul class="nav">
+            <ul class="nav pull-left">
               <li class="active"><a href="index.html" accesskey="h" title="Home Page"><i class="icon-home icon-inverse"></i><em>H</em>ome</a></li>
               <li><a href="about.html" accesskey="a" title="About us"><em>A</em>bout</a></li>
                <!--<li><a href="contact.html" accesskey="1" title="Contact Us" >Get In Touch!</a></li> -->
@@ -71,47 +71,17 @@
             <!-- this displays the sign in sction on the right hand side of the navbar -->
           <ul class="nav pull-right">
           <li class="divider-vertical"></li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" href="#" data-toggle="dropdown" title="Sign In">Sign In <strong class="caret"></strong></a>
-            <div class="dropdown-menu" style="padding: 15px; padding-bottom: 10px;">
-              <!-- Login form here -->
-            <form action="index.html">
-           <!--Username-->
-            <input style="margin-bottom: 15px;" type="text" placeholder="Username" size="30" title="Username"/> 
-            <!--Password-->
-            <input style="margin-bottom: 15px;" type="password" placeholder="Password" name="user[password]" size="30" title="Password"/>
-            <!--Sign In-->
-            <button <input class= "btn btn-primary"  name="commit" value="Sign In" title="Sign In">Sign In</button>
-          </form>
-          </div>
-            <ul class="nav pull-rigt">
-          <li class="divider-vertical"></li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" href="#" data-toggle="dropdown" title="Sign In">Register <strong class="caret"></strong></a>
-            <div class="dropdown-menu" style="padding: 15px; padding-bottom: 10px;">
-              <form id='register' action='register.php' method='post'
-              accept-charset='UTF-8'>
-              <fieldset >
-              <legend>Register</legend>
-              <input type='hidden' name='submitted' id='submitted' value='1'/>
-              <label for='name' >Your Full Name*: </label>
-              <input type='text' name='name' id='name' maxlength="50" />
-              <label for='email' >Email Address*:</label>
-              <input type='text' name='email' id='email' maxlength="50" />
-              <label for='username' >UserName*:</label>
-              <input type='text' name='username' id='username' maxlength="50" />
-              <label for='password' >Password*:</label>
-              <input type='password' name='password' id='password' maxlength="50" />
-              <input type='submit' name='Submit' value='Submit' />
-              </fieldset>
-              </form>
-            </div>
+          <li><a href="login.php" title="Login" >Login</a></li>
+         
+            
+          <li><a href="register.php" title="Resgister" >Register</a></li>
 
            
           </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
+    <H1>Website Currently Under Construction</h1>
 
     <div class="container">
 
@@ -166,7 +136,26 @@
   });
 
   </script>
+  <script type='text/javascript'>
+// <![CDATA[
+    var pwdwidget = new PasswordWidget('thepwddiv','password');
+    pwdwidget.MakePWDWidget();
+    
+    var frmvalidator  = new Validator("register");
+    frmvalidator.EnableOnPageErrorDisplay();
+    frmvalidator.EnableMsgsTogether();
+    frmvalidator.addValidation("name","req","Please provide your name");
 
+    frmvalidator.addValidation("email","req","Please provide your email address");
+
+    frmvalidator.addValidation("email","email","Please provide a valid email address");
+
+    frmvalidator.addValidation("username","req","Please provide a username");
+    
+    frmvalidator.addValidation("password","req","Please provide a password");
+
+// ]]>
+</script>
 
      
  
