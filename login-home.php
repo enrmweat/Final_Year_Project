@@ -14,10 +14,11 @@ if(!$fgmembersite->CheckLogin())
       <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
       <title>Home page</title>
       <link rel="STYLESHEET" type="text/css" href="style/fg_membersite.css">
+      <meta http-equiv="refresh" content="5; URL=index.php">
 </head>
 <body>
 <div id='fg_membersite_content'>
-<h2>Home Page</h2>
+<h2></h2>
 Welcome back <?= $fgmembersite->UserFullName(); ?>!
 
 <p><a href='change-pwd.php'>Change password</a></p>

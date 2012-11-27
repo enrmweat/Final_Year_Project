@@ -1,4 +1,12 @@
+<?PHP
+require_once("include/membersite_config.php");
 
+if(!$fgmembersite->CheckLogin())
+{
+    $fgmembersite->RedirectToURL("login.php");
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -48,13 +56,13 @@
             <span class="icon-bar"></span>
           </a>
           <!-- this is my main section within the navbar, it contains all the page navigation links -->
-          <a class="brand" href="index.html" title="Return to Home Page"><img src="assets/img/Logo.png"></a>
+          <a class="brand" href="index.php" title="Return to Home Page"><img src="assets/img/Logo.png"></a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li ><a href="index.html" accesskey="h" title="Home Page"><i class="icon-home icon-inverse"></i><em>H</em>ome</a></li>
+              <li ><a href="index.php" accesskey="h" title="Home Page"><i class="icon-home icon-inverse"></i><em>H</em>ome</a></li>
               <li><a href="about.html" accesskey="a" title="About us"><em>A</em>bout</a></li>
                <!--<li><a href="contact.html" accesskey="1" title="Contact Us" >Get In Touch!</a></li> -->
-              <li class="active"><a href="wifimaplocation.html" title="View Wi-Fi Hotspots In Liverpool" accesskey="m">Wi-Fi <em>M</em>ap & Location</a></li>
+              <li class="active"><a href="wifimaplocation.php" title="View Wi-Fi Hotspots In Liverpool" accesskey="m">Wi-Fi <em>M</em>ap & Location</a></li>
             
               </li>
               <!-- this is my dropdown box within my navbar -->
@@ -82,10 +90,12 @@
       </div>
     </div>
 
- <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+   
+  
+   <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <style type="text/css">
       html { height: 100% }
-      body { height: 80%; margin: 0; padding: 0.5 }
+      body { height: 85%; margin: 0; padding: 0.2 }
       #map_canvas { height: 100% }
     </style>
     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDINxXHHp6_arevhHdyZZ5W3ty0mEWjzd4&sensor=true">
@@ -100,19 +110,47 @@
   }
   var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
 
+   var image = 'image.png'
+  var shadow = 'shadow.png'
   var marker = new google.maps.Marker({
       position: myLatlng,
       map: map,
+      /*draggable:true,*/
+      icon: image,
+      /*shape: shape,*/
+      shadow: shadow,
+      animation: google.maps.Animation.DROP,
       title:"Liverpool One"
+});
+   var infowindow = new google.maps.InfoWindow ({
+    content: 'Liverpool One WiFi Test Popup, Like a boss..!'
   });
+  google.maps.event.addListener(marker, 'click', function() {
+  infowindow.open(map, marker);
+});
 
+
+
+  
+  /*google.maps.event.addListener(marker, 'click', function);
+  infowindow.open(map, marker);
+});*/
+
+}
+
+  
           
-      }
+      
     </script>
   </head>
   <body onload="initialize()">
     <div id="map_canvas" style="width:100%; height:100%"></div>
 
+     <p align="right">
+    Logged in as: <?= $fgmembersite->UserFullName() ?>
+    </p>
+    <a class="pull-right" href="login-home.php" title="Your Account" accesskey="m">My Account</a>
+ <div class="container">
 
   <hr>
 

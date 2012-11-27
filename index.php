@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Liverpool WiFi | Map</title>
-     <link rel="shortcut icon" href="assets/ico/favicon.ico"/>
+    <title>Liverpool WiFi | Home</title>
+     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -29,7 +28,7 @@
     <![endif]-->
 
     <!-- Favicon and icon section -->
-   
+   <link rel="shortcut icon" href="assets/ico/favicon.ico"/>
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
@@ -48,13 +47,13 @@
             <span class="icon-bar"></span>
           </a>
           <!-- this is my main section within the navbar, it contains all the page navigation links -->
-          <a class="brand" href="index.html" title="Return to Home Page"><img src="assets/img/Logo.png"></a>
+          <a class="brand" href="index.php" title="Return to Home Page"><img src="assets/img/Logo.png"></a>
           <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li ><a href="index.html" accesskey="h" title="Home Page"><i class="icon-home icon-inverse"></i><em>H</em>ome</a></li>
-              <li><a href="about.html" accesskey="a" title="About us"><em>A</em>bout</a></li>
+            <ul class="nav pull-left">
+              <li class="active"><a href="index.php" accesskey="h" title="Home Page"><i class="icon-home icon-inverse"></i><em>H</em>ome</a></li>
+              <li><a href="access-controlled.php" accesskey="a" title="About us"><em>A</em>bout</a></li>
                <!--<li><a href="contact.html" accesskey="1" title="Contact Us" >Get In Touch!</a></li> -->
-              <li class="active"><a href="wifimaplocation.html" title="View Wi-Fi Hotspots In Liverpool" accesskey="m">Wi-Fi <em>M</em>ap & Location</a></li>
+              <li><a href="wifimaplocation.php" title="View Wi-Fi Hotspots In Liverpool" accesskey="m">Wi-Fi <em>M</em>ap & Location</a></li>
             
               </li>
               <!-- this is my dropdown box within my navbar -->
@@ -69,52 +68,56 @@
                   </ul>
             </ul>
             <!-- this displays the sign in sction on the right hand side of the navbar -->
-                  <ul class="nav pull-right">
+          <ul class="nav pull-right">
           <li class="divider-vertical"></li>
           <li><a href="login.php" title="Login" >Login</a></li>
          
             
           <li><a href="register.php" title="Resgister" >Register</a></li>
-           
+
            
           </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
-
- <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-    <style type="text/css">
-      html { height: 100% }
-      body { height: 80%; margin: 0; padding: 0.5 }
-      #map_canvas { height: 100% }
-    </style>
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDINxXHHp6_arevhHdyZZ5W3ty0mEWjzd4&sensor=true">
-    </script>
-    <script type="text/javascript">
-      function initialize() {
-        var myLatlng = new google.maps.LatLng(53.403938,-2.987954);
-  var mapOptions = {
-    zoom: 17,
-    center: myLatlng,
-    mapTypeId: google.maps.MapTypeId.HYBRID
-  }
-  var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
-
-  var marker = new google.maps.Marker({
-      position: myLatlng,
-      map: map,
-      title:"Liverpool One"
-  });
-
-          
-      }
-    </script>
-  </head>
-  <body onload="initialize()">
-    <div id="map_canvas" style="width:100%; height:100%"></div>
+<div align='right'><a href='http://www.hit-counter-html-code.com'><img src='http://www.hit-counter-html-code.com/c.php?d=9&id=92339&s=18' border='0' title='free website hit counter'></a><br/>
+  <small><a href='http://www.hit-counter-html-code.com' title="hit counter html code">Visitors!!</a></small></div>
+    
+    <a class="pull-right" href="login-home.php" title="Your Account" accesskey="m">My Account</a>
 
 
-  <hr>
+    <H1>Website Currently Under Construction</h1>
+
+    <div class="container">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <h1>Welcome!!</h1>
+        <p>This website has been set-up to provide easy access to information regarding Wi-Fi hotspots in and around the Liverpool City Area.</p>
+        <p><a class="btn btn-large">Learn more &raquo;</a></p>
+      </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="span4">
+          <h2>About!</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div>
+        <div class="span4">
+          <h2>Head Over to the Map</h2>
+          <p><br>
+          <br><br><br><br> </p>
+          <p><a class="btn" href="#">Hotspot Map &raquo;</a></p>
+       </div>
+        <div class="span4">
+          <h2>Contact Me!</h2>
+          <p>If you wish to contact me regarding this service or with any problems/updates regarding the location of any Wi-Fi Hotspots, whether it be their not where they're supposed to be or are no longer there. Please Use the link below to contact me using my contact form!. Thankyou</p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div>
+      </div>
+
+      <hr>
 
         <!-- this places a footer at the bottom of the page, it contains the "Copyright" and the Connect to facebook link -->
        <footer>
@@ -129,7 +132,7 @@
     <!-- added new jquery files to allow for JS actions, for dropdown actions and other java actions -->
     <script text/javascript src="assets/js/jquery-1.8.2.min.js"></script>
     <script text/javascript src="assets/js/bootstrap.min.js"></script>
-       <script language ="javascript">
+   <script language ="javascript">
     $(function(){
       $('.dropdown-toggle').dropdown();
     $('.dropdown input, .dropdown label').click(function (e) {
@@ -138,7 +141,26 @@
   });
 
   </script>
+  <script type='text/javascript'>
+// <![CDATA[
+    var pwdwidget = new PasswordWidget('thepwddiv','password');
+    pwdwidget.MakePWDWidget();
+    
+    var frmvalidator  = new Validator("register");
+    frmvalidator.EnableOnPageErrorDisplay();
+    frmvalidator.EnableMsgsTogether();
+    frmvalidator.addValidation("name","req","Please provide your name");
 
+    frmvalidator.addValidation("email","req","Please provide your email address");
+
+    frmvalidator.addValidation("email","email","Please provide a valid email address");
+
+    frmvalidator.addValidation("username","req","Please provide a username");
+    
+    frmvalidator.addValidation("password","req","Please provide a password");
+
+// ]]>
+</script>
 
      
  

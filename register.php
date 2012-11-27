@@ -98,8 +98,8 @@ if(isset($_POST['submitted']))
    <div class="container">
 
 <!-- Form Code Start -->
-       <center> <div id='fg_membersite'>
-        <form id='register' action='<?php echo $fgmembersite->GetSelfScript(); ?>' method='post' accept-charset='UTF-8'>
+       <center><div align="center" id='fg_membersite'>
+        <form align="center" id='register' action='<?php echo $fgmembersite->GetSelfScript(); ?>' method='post' accept-charset='UTF-8'>
         <fieldset >
         <legend>Register</legend>
 
@@ -141,6 +141,7 @@ if(isset($_POST['submitted']))
         </form>
       </div>
     </div>
+
 <!-- client-side Form Validations:
 Uses the excellent form validation script from JavaScript-coder.com-->
 <hr>

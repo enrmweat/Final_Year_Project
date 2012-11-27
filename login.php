@@ -93,21 +93,23 @@ if(isset($_POST['submitted']))
         </div>
       </div>
     </div>
+
+    <div class="container">
     <H1>Website Currently Under Construction</h1>
 
 <!-- Form Code Start -->
           <div id='fg_membersite'>
-          <form id='login' action='<?php echo $fgmembersite->GetSelfScript(); ?>' method='post' accept-charset='UTF-8'>
-          <fieldset >
-          <legend>Login</legend>
+          <form align="center" id='login' action='<?php echo $fgmembersite->GetSelfScript(); ?>' method='post' accept-charset='UTF-8'>
+          <fieldset align="center">
+          <legend align="center">Login</legend>
 
-          <input type='hidden' name='submitted' id='submitted' value='1'/>
+          <input align="center" type='hidden' name='submitted' id='submitted' value='1'/>
 
-          <div class='short_explanation'>* required fields</div>
+          <div align="center" class='short_explanation'>* required fields</div>
 
-          <div><span class='error'><?php echo $fgmembersite->GetErrorMessage(); ?></span></div>
+          <div align="center"><span class='error'><?php echo $fgmembersite->GetErrorMessage(); ?></span></div>
           <div class='container'>
-              <label for='username' >UserName*:</label><br/>
+              <label for='username' >Username*:</label><br/>
               <input type='text' name='username' id='username' value='<?php echo $fgmembersite->SafeDisplay('username') ?>' maxlength="50" /><br/>
               <span id='login_username_errorloc' class='error'></span>
           </div>
@@ -120,7 +122,8 @@ if(isset($_POST['submitted']))
           <div class='container'>
               <input type='submit' name='Submit' value='Submit' />
           </div>
-          <div class='short_explanation'><a href='reset-pwd-req.php'>Forgot Password?</a></div>
+          <div class='short_explanation'><a href='reset-pwd-req.php' title="Forgot Password">Forgot Password?</a></div>
+          <div class='short_explanation'><a href='reset-pwd-req.php' title="Register for Free!">Not Registered? Register Here! Its Free!</a></div>
           </fieldset>
           </form>
 
