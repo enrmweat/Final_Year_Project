@@ -63,10 +63,10 @@ if(isset($_POST['submitted']))
           <a class="brand" href="index.html" title="Return to Home Page"><img src="assets/img/Logo.png"></a>
           <div class="nav-collapse collapse">
             <ul class="nav pull-left">
-              <li><a href="index.html" accesskey="h" title="Home Page"><i class="icon-home icon-inverse"></i><em>H</em>ome</a></li>
-              <li><a href="about.html" accesskey="a" title="About us"><em>A</em>bout</a></li>
+              <li><a href="index.php" accesskey="h" title="Home Page"><i class="icon-home icon-inverse"></i><em>H</em>ome</a></li>
+              <li><a href="about.php" accesskey="a" title="About us"><em>A</em>bout</a></li>
                <!--<li><a href="contact.html" accesskey="1" title="Contact Us" >Get In Touch!</a></li> -->
-              <li><a href="wifimaplocation.html" title="View Wi-Fi Hotspots In Liverpool" accesskey="m">Wi-Fi <em>M</em>ap & Location</a></li>
+              <li><a href="wifimaplocation.php" title="View Wi-Fi Hotspots In Liverpool" accesskey="m">Wi-Fi <em>M</em>ap & Location</a></li>
             
               </li>
               <!-- this is my dropdown box within my navbar -->
@@ -99,15 +99,15 @@ if(isset($_POST['submitted']))
 
 <!-- Form Code Start -->
           <div id='fg_membersite'>
-          <form align="center" id='login' action='<?php echo $fgmembersite->GetSelfScript(); ?>' method='post' accept-charset='UTF-8'>
-          <fieldset align="center">
-          <legend align="center">Login</legend>
+          <form id='login' action='<?php echo $fgmembersite->GetSelfScript(); ?>' method='post' accept-charset='UTF-8'>
+          <fieldset>
+          <legend>Login</legend>
 
-          <input align="center" type='hidden' name='submitted' id='submitted' value='1'/>
+          <input type='hidden' name='submitted' id='submitted' value='1'/>
 
-          <div align="center" class='short_explanation'>* required fields</div>
+          <div class='short_explanation'>* required fields</div>
 
-          <div align="center"><span class='error'><?php echo $fgmembersite->GetErrorMessage(); ?></span></div>
+          <div ><span class='error'><?php echo $fgmembersite->GetErrorMessage(); ?></span></div>
           <div class='container'>
               <label for='username' >Username*:</label><br/>
               <input type='text' name='username' id='username' value='<?php echo $fgmembersite->SafeDisplay('username') ?>' maxlength="50" /><br/>

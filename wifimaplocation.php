@@ -60,7 +60,7 @@ if(!$fgmembersite->CheckLogin())
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li ><a href="index.php" accesskey="h" title="Home Page"><i class="icon-home icon-inverse"></i><em>H</em>ome</a></li>
-              <li><a href="about.html" accesskey="a" title="About us"><em>A</em>bout</a></li>
+              <li><a href="about.php" accesskey="a" title="About us"><em>A</em>bout</a></li>
                <!--<li><a href="contact.html" accesskey="1" title="Contact Us" >Get In Touch!</a></li> -->
               <li class="active"><a href="wifimaplocation.php" title="View Wi-Fi Hotspots In Liverpool" accesskey="m">Wi-Fi <em>M</em>ap & Location</a></li>
             

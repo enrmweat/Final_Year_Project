@@ -11,7 +11,10 @@ You can customize all the aspects of the form in this style sheet
 -moz-border-radius: 10px;
 -webkit-border-radius: 10px;
 -khtml-border-radius: 10px;
-border-radius: 10px;   
+border-radius: 10px;
+position: relative;
+left: 400px;
+   
 }
 
 #fg_membersite legend, #fg_membersite h2
@@ -20,6 +23,10 @@ border-radius: 10px;
    font-size: 1.3em;
    font-weight:bold;
    color:#333;
+   position: relative;
+   
+   
+
 }
 
 #fg_membersite label
@@ -27,6 +34,8 @@ border-radius: 10px;
    font-family : Arial, sans-serif;
    font-size:0.8em;
    font-weight: bold;
+   position: relative;
+   
 }
 
 #fg_membersite input[type="text"],#fg_membersite textarea,
@@ -63,6 +72,8 @@ border-radius: 10px;
    width:100px;
    height:30px;
    padding-left:0px;
+   position: relative;
+   left: 20px;
 }
 
 #fg_membersite textarea

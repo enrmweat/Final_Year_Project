@@ -63,10 +63,10 @@ if(isset($_POST['submitted']))
           <a class="brand" href="index.html" title="Return to Home Page"><img src="assets/img/Logo.png"></a>
           <div class="nav-collapse collapse">
             <ul class="nav pull-left">
-              <li><a href="index.html" accesskey="h" title="Home Page"><i class="icon-home icon-inverse"></i><em>H</em>ome</a></li>
-              <li><a href="about.html" accesskey="a" title="About us"><em>A</em>bout</a></li>
+              <li><a href="index.php" accesskey="h" title="Home Page"><i class="icon-home icon-inverse"></i><em>H</em>ome</a></li>
+              <li><a href="about.php" accesskey="a" title="About us"><em>A</em>bout</a></li>
                <!--<li><a href="contact.html" accesskey="1" title="Contact Us" >Get In Touch!</a></li> -->
-              <li><a href="wifimaplocation.html" title="View Wi-Fi Hotspots In Liverpool" accesskey="m">Wi-Fi <em>M</em>ap & Location</a></li>
+              <li><a href="wifimaplocation.php" title="View Wi-Fi Hotspots In Liverpool" accesskey="m">Wi-Fi <em>M</em>ap & Location</a></li>
             
               </li>
               <!-- this is my dropdown box within my navbar -->
@@ -98,9 +98,9 @@ if(isset($_POST['submitted']))
    <div class="container">
 
 <!-- Form Code Start -->
-       <center><div align="center" id='fg_membersite'>
-        <form align="center" id='register' action='<?php echo $fgmembersite->GetSelfScript(); ?>' method='post' accept-charset='UTF-8'>
-        <fieldset >
+       <div id='fg_membersite'>
+        <form id='register' action='<?php echo $fgmembersite->GetSelfScript(); ?>' method='post' accept-charset='UTF-8'>
+        <fieldset>
         <legend>Register</legend>
 
         <input type='hidden' name='submitted' id='submitted' value='1'/>
@@ -131,26 +131,30 @@ if(isset($_POST['submitted']))
             <input type='password' name='password' id='password' maxlength="50" />
             </noscript>    
             <div id='register_password_errorloc' class='error' style='clear:both'></div>
-        </div></center>
-
-        <div class='container'>
             <input type='submit' name='Submit' value='Submit' />
         </div>
+  
+            
+        
 
         </fieldset>
         </form>
-      </div>
-    </div>
+      
+    
 
 <!-- client-side Form Validations:
 Uses the excellent form validation script from JavaScript-coder.com-->
-<hr>
+      <hr>
 
-<footer>
+      <footer>
         <p>&copy; Michael Weatherall 2012 &nbsp<center><i class="icon-thumbs-up icon-inverse"></i><a href="http://www.facebook.com/group.php?gid=2256597544">Find and Like us on Facebook!</center></a></p>
       </footer>
 
-    </div> <!-- /container -->
+    </div>
+  </div>
+</div>
+
+   
 
     
     <!-- ================================================== -->

@@ -1,25 +1,10 @@
-<?PHP
-require_once("./include/membersite_config.php");
-
-$emailsent = false;
-if(isset($_POST['submitted']))
-{
-   if($fgmembersite->EmailResetPasswordLink())
-   {
-        $fgmembersite->RedirectToURL("reset-pwd-link-sent.html");
-        exit;
-   }
-}
-
-?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
-<head>
-      <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
-      <title>Reset Password Request</title>
-      <link rel="STYLESHEET" type="text/css" href="style/fg_membersite.css" />
-      <script type='text/javascript' src='scripts/gen_validatorv31.js'></script>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Liverpool WiFi | About</title>
+     
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -48,9 +33,10 @@ if(isset($_POST['submitted']))
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
-</head>
-<body>
-    <!-- this is my code for the navbar it contains all the links and information needed to navigate through the page, this complete section
+  </head>
+
+  <body>
+          <!-- this is my code for the navbar it contains all the links and information needed to navigate through the page, this complete section
           continues throughout my whole site -->
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
@@ -65,7 +51,7 @@ if(isset($_POST['submitted']))
           <div class="nav-collapse collapse">
             <ul class="nav pull-left">
               <li><a href="index.php" accesskey="h" title="Home Page"><i class="icon-home icon-inverse"></i><em>H</em>ome</a></li>
-              <li><a href="about.php" accesskey="a" title="About us"><em>A</em>bout</a></li>
+              <li class="active"><a href="about.php" accesskey="a" title="About us"><em>A</em>bout</a></li>
                <!--<li><a href="contact.html" accesskey="1" title="Contact Us" >Get In Touch!</a></li> -->
               <li><a href="wifimaplocation.php" title="View Wi-Fi Hotspots In Liverpool" accesskey="m">Wi-Fi <em>M</em>ap & Location</a></li>
             
@@ -94,33 +80,44 @@ if(isset($_POST['submitted']))
         </div>
       </div>
     </div>
-<!-- Form Code Start -->
+<div align='right'><a href='http://www.hit-counter-html-code.com'><img src='http://www.hit-counter-html-code.com/c.php?d=9&id=92339&s=18' border='0' title='free website hit counter'></a><br/>
+  <small><a href='http://www.hit-counter-html-code.com' title="hit counter html code">Visitors!!</a></small></div>
+    
+    <a class="pull-right" href="login-home.php" title="Your Account" accesskey="m">My Account</a>
+
+
+    <H1>Website Currently Under Construction</h1>
+
     <div class="container">
-      
-    <div id='fg_membersite'>
-    <form id='resetreq' action='<?php echo $fgmembersite->GetSelfScript(); ?>' method='post' accept-charset='UTF-8'>
-    <fieldset >
-    <legend>Reset Password</legend>
 
-    <input type='hidden' name='submitted' id='submitted' value='1'/>
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <h1>Welcome!!</h1>
+        <p>This website has been set-up to provide easy access to information regarding Wi-Fi hotspots in and around the Liverpool City Area.</p>
+        <p><a class="btn btn-large">Learn more &raquo;</a></p>
+      </div>
 
-    <div class='short_explanation'>* required fields</div>
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="span4">
+          <h2>About!</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div>
+        <div class="span4">
+          <h2>Head Over to the Map</h2>
+          <p><br>
+          <br><br><br><br> </p>
+          <p><a class="btn" href="#">Hotspot Map &raquo;</a></p>
+       </div>
+        <div class="span4">
+          <h2>Contact Me!</h2>
+          <p>If you wish to contact me regarding this service or with any problems/updates regarding the location of any Wi-Fi Hotspots, whether it be their not where they're supposed to be or are no longer there. Please Use the link below to contact me using my contact form!. Thankyou</p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div>
+      </div>
 
-    <div><span class='error'><?php echo $fgmembersite->GetErrorMessage(); ?></span></div>
-    <div class='container'>
-        <label for='username' >Your Email*:</label><br/>
-        <input type='text' name='email' id='email' value='<?php echo $fgmembersite->SafeDisplay('email') ?>' maxlength="50" /><br/>
-        <span id='resetreq_email_errorloc' class='error'></span>
-    </div>
-    <div class='short_explanation'>A link to reset your password will be sent to the email address</div>
-    <div class='container'>
-        <input type='submit' name='Submit' value='Submit' />
-    </div>
-
-    </fieldset>
-    </form>
-
-   <hr>
+      <hr>
 
         <!-- this places a footer at the bottom of the page, it contains the "Copyright" and the Connect to facebook link -->
        <footer>
@@ -128,9 +125,12 @@ if(isset($_POST['submitted']))
       </footer>
 
     </div> <!-- /container -->
-<!-- client-side Form Validations:
-Uses the excellent form validation script from JavaScript-coder.com-->
-<script text/javascript src="assets/js/jquery-1.8.2.min.js"></script>
+
+    
+    <!-- ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- added new jquery files to allow for JS actions, for dropdown actions and other java actions -->
+    <script text/javascript src="assets/js/jquery-1.8.2.min.js"></script>
     <script text/javascript src="assets/js/bootstrap.min.js"></script>
    <script language ="javascript">
     $(function(){
@@ -141,24 +141,29 @@ Uses the excellent form validation script from JavaScript-coder.com-->
   });
 
   </script>
-
-<script type='text/javascript'>
+  <script type='text/javascript'>
 // <![CDATA[
-
-    var frmvalidator  = new Validator("resetreq");
+    var pwdwidget = new PasswordWidget('thepwddiv','password');
+    pwdwidget.MakePWDWidget();
+    
+    var frmvalidator  = new Validator("register");
     frmvalidator.EnableOnPageErrorDisplay();
     frmvalidator.EnableMsgsTogether();
+    frmvalidator.addValidation("name","req","Please provide your name");
 
-    frmvalidator.addValidation("email","req","Please provide the email address used to sign-up");
-    frmvalidator.addValidation("email","email","Please provide the email address used to sign-up");
+    frmvalidator.addValidation("email","req","Please provide your email address");
+
+    frmvalidator.addValidation("email","email","Please provide a valid email address");
+
+    frmvalidator.addValidation("username","req","Please provide a username");
+    
+    frmvalidator.addValidation("password","req","Please provide a password");
 
 // ]]>
 </script>
 
-</div>
-<!--
-Form Code End (see html-form-guide.com for more info.)
--->
+     
+ 
 
-</body>
+  </body>
 </html>
