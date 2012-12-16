@@ -93,27 +93,53 @@
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
         <h1>Welcome!!</h1>
-        <p>This website has been set-up to provide easy access to information regarding Wi-Fi hotspots in and around the Liverpool City Area.</p>
-        <p><a class="btn btn-large">Learn more &raquo;</a></p>
+        <p>This website has been set-up to provide easy access to information regarding Wi-Fi hotspots in and around the Liverpool City Area. To use this service, a free one-time sign-up
+          is required, it only takes 2 minutes, so please head on over to my <a href="register.php" title="Register"> registration page</a> and sign up!.
+        For more information please click below</p>
+        <p><a href='about.php' title="See the About page for more info!" class="btn btn-large">Learn more &raquo;</a></p>
       </div>
 
       <!-- Example row of columns -->
       <div class="row">
         <div class="span4">
-          <h2>About!</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <h2>More information?</h2>
+          <p>For more information regarding what services are offered and what services are not offered by this website, please click here!, if you cannot find the information
+          you are looking for, please head on over to my <a href="about.php" title="Contact Me"> About page </a> and drop me an email using the contact form or Email option!  </p>
+          <p><a class="btn" href="faq.html">View details &raquo;</a></p>
         </div>
         <div class="span4">
           <h2>Head Over to the Map</h2>
-          <p><br>
-          <br><br><br><br> </p>
-          <p><a class="btn" href="#">Hotspot Map &raquo;</a></p>
+          <p>Once you have signed up, if u wish to get straight to the offered service, please click the button below!<br>
+          <br><br><br> </p>
+          <p><a class="btn" href="wifimaplocation.php">Hotspot Map &raquo;</a></p>
        </div>
         <div class="span4">
           <h2>Contact Me!</h2>
           <p>If you wish to contact me regarding this service or with any problems/updates regarding the location of any Wi-Fi Hotspots, whether it be their not where they're supposed to be or are no longer there. Please Use the link below to contact me using my contact form!. Thankyou</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <a href="#myModal" role="button" class="btn" data-toggle="modal">Contact Us!</a>
+      <!--modal body-->
+      <div id="myModal" class="modal hide fade" tadindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" style="display: block;">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+          <h3 id="myModalLabel">Contact Us</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Contact Form</h4>
+    <p> Please fill in the below form</p>
+    <body>
+    <form action="contact.php" method="post">
+    Your name<br>
+    <input type="text" name="cf_name"><br>
+    Your e-mail<br>
+    <input type="text" name="cf_email"><br>
+    Message<br>
+    <textarea name="cf_message"></textarea><br>
+    <input type="submit" value="Send">
+    <input type="reset" data-dismiss="modal" value="Close">
+  </form>
+  </body>
+    </div>
+  </div>
         </div>
       </div>
 

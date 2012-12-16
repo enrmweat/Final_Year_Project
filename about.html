@@ -1,0 +1,548 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Liverpool the 3D Tour &middot; Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <style>
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      padding-bottom: 40px;
+      color: #5a5a5a;
+    }
+
+
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: relative;
+      z-index: 10;
+      margin-top: 20px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    }
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
+
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+
+    .carousel-control {
+      background-color: transparent;
+      border: 0;
+      font-size: 120px;
+      margin-top: 0;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+
+    .carousel .item {
+      height: 500px;
+    }
+    .carousel img {
+      min-width: 100%;
+      height: 500px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-bottom: 100px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+
+
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+      text-align: center;
+    }
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 500px;
+      }
+      .carousel img {
+        width: auto;
+        height: 500px;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel .container {
+
+      }
+      .carousel .item {
+        height: 300px;
+      }
+      .carousel img {
+        height: 300px;
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-bottom: 40px;
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 18px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+    }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+
+
+
+    <!-- NAVBAR
+    ================================================== -->
+    <!-- Wrap the .navbar in .container to center it on the page and provide easy way to target it with .navbar-wrapper. -->
+    <div class="container navbar-wrapper">
+
+      <div class="navbar navbar-inverse">
+        <div class="navbar-inner">
+          <!-- Responsive Navbar Part 1: Button for triggering responsive navbar. Include responsive CSS to utilize. -->
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.html" title="Liverpool 3D Tour">Liverpool 3D Tour</a>
+          <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="index.html" title="Home" accesskey="h">Home</a></li>
+              <li class="active"><a href="about.html" title="About" accesskey="a">About</a></li>
+             
+
+              <!--dropdown box 1 - heritage-->
+               <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Heritage">Heritage<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="stgeorgeshall.html" title="St. Georges Hall" accesskey="g">St. Georges Hall</a></li>
+                  <li><a href="Royalliverbirds.html" title="The Royal Liver Birds" accesskey="r">The Royal Liver Birds</a></li>
+                  <li><a href="Cunard Buildings" title="Cunard Buildings" accesskey="c">Cunard Buildings</a></li>
+                </ul>
+              </li>
+               <!--drop down box 2 - fotball-->
+              <li class="dropdown">
+                <a href="#" title="Football" class="dropdown-toggle" data-toggle="dropdown">Football<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="EFC.html" title="Everton FC" accesskey="e">Everton FC</a></li>
+                  <li><a href="LFC.html" title="Liverpool FC" accesskey="l">Liverpool FC</a></li>
+                </ul>
+              </li>
+          
+              <!--drop down box 3 - The Beatles-->
+              <li class="dropdown">
+                <a href="#" title = "The Beatles" class="dropdown-toggle" data-toggle="dropdown">The Beatles<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="Matthewstreet.html" title="Matthew Street" accesskey="m">Matthew Street</a></li>
+                  <li><a href="Thebeatles.html" title="The Beatles Story" accesskey="b">The Beatles Story</a></li>
+                </ul>
+              </li>
+                        
+               <!--drop down box 4 - Cathedrals-->
+              <li class="dropdown">
+                <a href="Cathedrals" title="Cathedrals" class="dropdown-toggle" data-toggle="dropdown">Cathedrals<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="Anglican.hmtl" title="Anglican" accesskey="a">Anglican</a></li>
+                  <li><a href="metropolitan.html" title="Metropolitan" accesskey="p">Metropolitan</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!-- /.navbar-inner -->
+      </div><!-- /.navbar -->
+   </div><!-- /.container -->
+
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="assets/img/aboutcarousel/waterfrontnight.png" title="Liverpool Skyline">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>About.</h1>
+              <p class="lead">Find out more about this project and how it works on this page.</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/img/aboutcarousel/waterfront.png" title="Liverpool Skyline with HMS Ark Royal">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Contac Us</h1>
+              <p class="lead">Contact us by filling in our simple form or just give us a call or email.</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/img/indexcarousel/skyline.png" title="Royal Liver Building">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>FAQ'S</h1>
+              <p class="lead">Get some answers to the most frequently asked questions on this page.</p>
+              <a class="btn btn-large btn-primary" href="about.html" title="Learn More">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.end of carousel -->
+
+
+
+    <!-- features
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="span">
+        <h1 class="featurette-heading">About</h1>
+        <p class="lead">This page in introduction how QR Codes and Augmneted Reality are going to be introduced to Liverpool to make tourism easier. This project is going to aim to give more accessible information to Liverpool's best attractions by simply scanning a QR Code or using an Augmented Reality marker. More information on how this is going to work can be found below along with frequantly asked questions and a contact information.
+        </div><!-- /.span4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-right" title="QR Code" src="assets/img/placehold/QRCODE.png">
+        <h2 class="featurette-heading">QR Codes.<span class="muted">Learn something new.</span></h2>
+        <p class="lead">QR Codes like the one on the right can be found printed on plaques placed by Liverpools most iconic sights that can be found at the top of this website. Simply download a QR Code scanner such as <a href="https://play.google.com/store/apps/details?id=com.google.zxing.client.android&feature=search_result#?t=W251bGwsMSwyLDEsImNvbS5nb29nbGUuenhpbmcuY2xpZW50LmFuZHJvaWQiXQ.." title="Android Barcode Scanner"> Barcode Reader</a> for android or download <a href="http://www.itunes.apple.com/gb/app/qr-reader-for-iphone/id368494609?mt=8" title="QR Reader">QR Reader</a> for iOS. If these are downloaded quite simply scan the QR code found at the sight using the phone or tablets camera (Please note internet access will be required). The QR Code will show information on that sight giving easy and interesting information whilst the sight is viewed.</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-left" title="AR Marker" src="assets/img/placehold/armarker.png">
+        <h2 class="featurette-heading">Augmented Reality. <span class="muted">See stuff in a whole new way.</span></h2>
+        <p class="lead">AR Markers just like QR Markers are placed at Liverpool's most popular tourist attractions. AR Markers just like the one shown on the left will display 3D Models of the attractions they are placed at when used with a mobile phone and its camera. AR markers may aslso be placed at places of historical interest to show augmented reality at its best by showing how Liverpool may have looked with an overhead railway or a tram line running through it.</p>
+      </div>
+
+      <hr class="featurette-divider">
+   <!-- collapsable FAQ's-->
+  <div class="container">
+   <div class="row">  
+    <div class="span7">
+      <h2 class="featurette-heading">FAQ's</h2>
+      <div class="accordion" id="accordion2">
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne" title="Question">
+            <h3>Q. Will this website work on my phone?"</h3>
+            </a>
+          </div>
+          <div id="collapseOne" class="accordion-body in collapse" style="height: auto;">
+            <div class="accordion-inner" title="Answer">
+              "A. This website is fully supported on all mobile operating systems."
+            </div>
+          </div>
+        </div>
+        <!--next collapse faq-->
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo" title="Question">
+            <h3>Q. Do I need to download an app for the Augmented Reality?"</h3>
+            </a>
+          </div>
+          <div id="collapseTwo" class="accordion-body collapse" style="height: auto;">
+            <div class="accordion-inner" title="Answer">
+              "A. No at this present time there is no app to support this although there may be one in the future."
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+       
+
+  <div class="row">
+    <div class="span4">
+      <h2 class="featurette-heading">Contact Us</h2>
+      We can be contacted by selecting the button below.
+      <!--modal start-->
+      <!--modal button-->
+      <a href="#myModal" role="button" class="btn" data-toggle="modal">Contact Us!</a>
+      <!--modal body-->
+      <div id="myModal" class="modal hide fade" tadindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" style="display: block;">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+          <h3 id="myModalLabel">Contact Us</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Contact Form</h4>
+    <p> Please fill in the below form</p>
+    <body>
+    <form action="contact.php" method="post">
+    Your name<br>
+    <input type="text" name="cf_name"><br>
+    Your e-mail<br>
+    <input type="text" name="cf_email"><br>
+    Message<br>
+    <textarea name="cf_message"></textarea><br>
+    <input type="submit" value="Send">
+    <input type="reset" data-dismiss="modal" value="Close">
+  </form>
+  </body>
+    </div>
+  </div>
+      <!--end of modal-->
+
+      <br>
+      <br>      
+      Or just write to us at the address below.
+      <br>
+      <br>
+      <blockquote>
+        <address>
+          <strong>Liverpool John Moores</strong>
+          <br>
+          Byrom Street Campus
+          <br>
+          Liverpool
+          <br>
+          L3 3AF
+        </address>
+      </blockquote> 
+      <br>
+      Or drop us an email.
+      <br>
+      <a href="mailto:adam.hyland13@yahoo.co.uk" title="e-mail">adam.hyland13@yahoo.co.uk</a>
+      </div>
+    </div>
+  </div>
+</div><!--end of container-->
+
+  <hr class="featurette-divider"> <!--divider-->
+
+
+
+
+      <!-- END OF FEATURES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        
+        <p class="pull-right"><i class="icon-thumbs-up"></i><a href="https://www.facebook.com/groups/387919344619051/" title="Like us on Facebook"> Like us on Facebook</a></p>
+        <p class><i class="icon-retweet"></i><a href="http://www.twitter.com/Liverpool3DTour" title="Follow us on Twitter"> Follow us on Twitter</a></p>
+        <p class="pull-right"><i class="icon-chevron-up"></i><a href="#" title="Back to top">Back to top</a></p>
+        <p>&copy; 2012 Company, Inc. &middot; <a href="Readme/Accesskeys.pdf" title="Access Keys">Access Keys</a> &middot; <a href="Readme/Terms.pdf" title="Terms">Terms</a></p>
+      </footer>
+
+    </div><!-- end of container -->
+
+
+
+    <!-- javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+    </script>
+
+    
+
+        <!--jquery-->
+    <script text/javascript src="assets/js/jquery-1.8.2.min.js"></script>
+    <script type/javascript src="assets/js/bootstrap.min.js"></script>
+    <script language ="javascript">
+  </body>
+</html>

@@ -80,8 +80,7 @@
         </div>
       </div>
     </div>
-<div align='right'><a href='http://www.hit-counter-html-code.com'><img src='http://www.hit-counter-html-code.com/c.php?d=9&id=92339&s=18' border='0' title='free website hit counter'></a><br/>
-  <small><a href='http://www.hit-counter-html-code.com' title="hit counter html code">Visitors!!</a></small></div>
+
     
     <a class="pull-right" href="login-home.php" title="Your Account" accesskey="m">My Account</a>
 
@@ -90,41 +89,127 @@
 
     <div class="container">
 
-      <!-- Main hero unit for a primary marketing message or call to action -->
-      <div class="hero-unit">
-        <h1>Welcome!!</h1>
-        <p>This website has been set-up to provide easy access to information regarding Wi-Fi hotspots in and around the Liverpool City Area.</p>
-        <p><a class="btn btn-large">Learn more &raquo;</a></p>
-      </div>
-
-      <!-- Example row of columns -->
+      <!-- Three columns of text below the carousel -->
       <div class="row">
-        <div class="span4">
-          <h2>About!</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div>
-        <div class="span4">
-          <h2>Head Over to the Map</h2>
-          <p><br>
-          <br><br><br><br> </p>
-          <p><a class="btn" href="#">Hotspot Map &raquo;</a></p>
-       </div>
-        <div class="span4">
-          <h2>Contact Me!</h2>
-          <p>If you wish to contact me regarding this service or with any problems/updates regarding the location of any Wi-Fi Hotspots, whether it be their not where they're supposed to be or are no longer there. Please Use the link below to contact me using my contact form!. Thankyou</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div>
-      </div>
+        <div class="span">
+        <h1 class="featurette-heading">About</h1>
+        <p class="lead">This page has been set up to allow the easy access to Wireless Access Points in and around the Liverpool city area. I decided to set up and create this because having access to the internet
+        is almost essential in today’s world because nearly every piece of technology nowadays requires the internet in some form or another,
+        and not everything comes with mobile internet access, or if they do come with mobile internet access,
+        things can affect the performance of this service, for example, signal strength, slower speeds compared to Wi-Fi and usage allowance (not everybody
+        has an unlimited mobile data plan). So I thought that this website would allow those with minimal data plans, WIFI only devices, to find an internet connection
+        quicker and easier to continue with whatever they may require it for.
+        The website has been created using HTML, built on the <a href="http://twitter.github.com/bootstrap/" title="Twitter Bootstrap Home Page"> Twitter Bootstrap</a> framework, PHP Programming language (for all the dynamic content), and using the <a href="https://developers.google.com/maps/" title="Google Maps API"> Google
+        Maps API</a> for the importation of a Map canvas.</p>
+        </div><!-- /.span4 -->
+      </div><!-- /.row -->
 
-      <hr>
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-right" title="Google Maps" src="assets/img/googlemaplogo2.png">
+        <h2 class="featurette-heading">Google Maps<span class="muted"> A Brief Intro</span></h2>
+        <p class="lead">When Google Maps was first launched in February 2005, it was nothing more than a pan and scan virtual map of the entire globe, with basic blue, green and white colours and the only roads listed where for the United States and the United Kingdom.
+        and then over the years, new developments in technology allowed for greater developments in the Google Maps environment, starting with mapping the entire world’s road network to creating a satellite view of
+        to street view, to what this website uses, the google mapping API, the Google Mapping API allows users to embed Google Maps in their own web pages. The API provides a number of utilities for manipulating maps
+        and adding content to the map through a variety of services, allowing you to create robust maps applications on your website.
+        The JavaScript Maps API V3 is a free service, available for any web site that is free to consumers.
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-left" title="Twitter Bootstrap" src="assets/img/bootstraplogo.png">
+        <h2 class="featurette-heading">Twitter Bootstrap <span class="muted">Create Websites, a new way!</span></h2>
+        <p class="lead">Twitter bootstrap consists of a 12 column grid which allows for easy element placement, it contains many inbuilt JavaScript plugins, form controls and a web based customizer 
+          to easily customise any option that they offer. It also allows for easy webpage transformation on mobile devices and tablets, scaling pages automatically, due to its responsive CSS capabilities.
+        </p>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+     
+
+
+      <hr class="featurette-divider">
+   
+  
+       
+
+  <center><div class="row">
+    
+      <h2 class="featurette-heading">Send me a message!</h2>
+      Let me know what you think of the site, or if you have any general questions please do not hesitate to contact me!.
+      You can contact me in two ways, through the form below, or through direct email (see below link).
+      <!--modal start-->
+      <!--modal button-->
+      <br>
+      <a href="#myModal" role="button" class="btn" data-toggle="modal">Contact Form</a>
+      <!--modal body-->
+      <div id="myModal" class="modal hide fade" tadindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" style="display: block;">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+          <h3 id="myModalLabel">Contact Us</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Contact Form</h4>
+          <p> Please fill in the below form</p>
+          <body>
+          <form action="contact.php" method="post">
+          Your name<br>
+          <input type="text" name="cf_name"><br>
+          Your e-mail<br>
+          <input type="text" name="cf_email"><br>
+          Message<br>
+          <textarea name="cf_message"></textarea><br>
+          <input type="submit" value="Send">
+          <input type="reset" data-dismiss="modal" value="Close">
+        </form>
+        </body>
+          </div>
+        </div>
+  
+      <br>
+      Or send me an email!.
+      <br>
+      <a href="mailto:mike_weatherall@live.co.uk" title="e-mail">mike_weatherall@live.co.uk</a>
+      </div></center>
+    </div>
+  </div>
+
+<hr>
 
         <!-- this places a footer at the bottom of the page, it contains the "Copyright" and the Connect to facebook link -->
        <footer>
         <p>&copy; Michael Weatherall 2012 &nbsp<center><i class="icon-thumbs-up icon-inverse"></i><a href="http://www.facebook.com/group.php?gid=2256597544">Find and Like us on Facebook!</center></a></p>
       </footer>
 
-    </div> <!-- /container -->
+
+</div><!--end of container-->
+
+     
+
+      
+
+ 
+   
 
     
     <!-- ================================================== -->
