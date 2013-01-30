@@ -1,12 +1,3 @@
-<?PHP
-require_once("include/membersite_config.php");
-
-if(!$fgmembersite->CheckLogin())
-{
-    $fgmembersite->RedirectToURL("login.php");
-    exit;
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -73,7 +64,7 @@ if(!$fgmembersite->CheckLogin())
                   <!--<li><a href="clubsessions.html" title="Information on the sessions we run!" accesskey="c"><em>C</em>lub Sessions</a></li>
                   <li><a href="racingteam.html" title="Our superb racing team!" accesskey="o"><em>O</em>ur Racing Team</a></li>-->
                   <li class="divider"></li>
-                  <li><a href="accesskeysinfo.html" title="information on how to use access keys" accesskey="k">List of Access <em>K</em>eys</a></li>
+                  <li class="active"><a href="accesskeysinfo.html" title="information on how to use access keys" accesskey="k">List of Access <em>K</em>eys</a></li>
                   </ul>
             </ul>
             <!-- this displays the sign in sction on the right hand side of the navbar -->
@@ -90,7 +81,7 @@ if(!$fgmembersite->CheckLogin())
       </div>
     </div>
 
-   
+  <!-- set the map canvas, width, height and body size --> 
   
    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <style type="text/css">
@@ -100,7 +91,7 @@ if(!$fgmembersite->CheckLogin())
     </style>
     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDINxXHHp6_arevhHdyZZ5W3ty0mEWjzd4&sensor=true">
     </script>
-    <script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/tags/markerclustererplus/2.0.9/src/markerclusterer.js"></script>
+    <script type="text/javascript" src="assets/js/markerclusterer.js"/>
     <script type="text/javascript" src="assets/js/geolocationmarker.js"></script>
     <script type="text/javascript">
     //declare map and map type (zoom level and where to centre the map on loading)
@@ -120,12 +111,15 @@ function initialize() {
   
   var map = new google.maps.Map(document.getElementById("map_canvas"),
                                 mapOptions);
-
-
-  //var mcOptions = {gridSize: 50};
-  var GeoMarker = new GeolocationMarker(map);
   
+  //var GeoMarker = new GeolocationMarker(map);
+
+
+  
+   var mcOptions = {gridSize: 50, maxZoom: 20};
   setMarkers(map, wifimaplocation);
+  
+  
 }
 
 /**
@@ -264,8 +258,9 @@ function setMarkers(map, locations) {
   // Origins, anchor positions and coordinates of the marker
   // increase in the X direction to the right and in
   // the Y direction down.
+  
   var infowindow = new google.maps.InfoWindow();
-   var image = new google.maps.MarkerImage('image.png',
+  var image = new google.maps.MarkerImage('image.png',
   //     // This marker is 20 pixels wide by 32 pixels tall.
        new google.maps.Size(40, 35),
   //     // The origin for this image is 0,0.
@@ -287,9 +282,12 @@ function setMarkers(map, locations) {
       coord: [1, 1, 1, 20, 18, 20, 18 , 1],
       type: 'poly'
   };
-  for (var i = 0; i < locations.length; i++) {
-    var wifi = locations[i];
-    var myLatLng = new google.maps.LatLng(wifi[1], wifi[2]);
+  
+  
+
+  for (var i = 0; i < wifimaplocation.length; i++) {
+    var wifi = wifimaplocation[i];
+    var myLatLng = new google.maps.LatLng(wifi[1], wifi[2], wifi[3]);
     var marker = new google.maps.Marker({
         position: myLatLng,
         map: map,
@@ -298,9 +296,12 @@ function setMarkers(map, locations) {
         shape: shape,
         title: wifi[0],
         zIndex: wifi[3]
+
     });
 
-    //var mc = new MarkerClusterer(map, marker, mcOptions);
+    
+  markers.push(marker);
+  var markerCluster = new MarkerClusterer(map, marker, mcOptions);
 
     google.maps.event.addListener(marker, 'click', (function(marker, i) {
       return function() {
@@ -309,10 +310,28 @@ function setMarkers(map, locations) {
       }
     })(marker, i));
     
-  }
+     
 }
+  }
+ 
+
+
+// });
+//    var infowindow = new google.maps.InfoWindow ({
+//     content: 'Liverpool One WiFi Test Popup!'
+//   });
+//   google.maps.event.addListener(marker, 'click', function() {
+//   infowindow.open(map, marker);
+// });
+
+
+
   
-          
+  /*google.maps.event.addListener(marker, 'click', function);
+  infowindow.open(map, marker);
+});*/
+
+      
       
     </script>
   </head>
@@ -339,6 +358,7 @@ function setMarkers(map, locations) {
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- added new jquery files to allow for JS actions, for dropdown actions and other java actions -->
     <script text/javascript src="assets/js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerclusterer/src/markerclusterer.js"></script>
     <script text/javascript src="assets/js/bootstrap.min.js"></script>
        <script language ="javascript">
     $(function(){

@@ -55,29 +55,29 @@ $fgmembersite->LogOut();
           <div class="nav-collapse collapse">
             <ul class="nav pull-left">
               <li><a href="index.php" accesskey="h" title="Home Page"><i class="icon-home icon-inverse"></i><em>H</em>ome</a></li>
-              <li><a href="access-controlled.php" accesskey="a" title="About us"><em>A</em>bout</a></li>
+              <li><a href="about.php" accesskey="a" title="About us"><em>A</em>bout</a></li>
                <!--<li><a href="contact.html" accesskey="1" title="Contact Us" >Get In Touch!</a></li> -->
               <li><a href="wifimaplocation.php" title="View Wi-Fi Hotspots In Liverpool" accesskey="m">Wi-Fi <em>M</em>ap & Location</a></li>
             
               </li>
               <!-- this is my dropdown box within my navbar -->
-               <li class="dropdown">
+             <li class="dropdown">
                 <a  href="#" class="dropdown-toggle" data-toggle="dropdown" accesskey="i" title="FAQ & Information">FAQ & <em>I</em>nformation <b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li><a href="faq.html" accesskey="q" title="FAQ Page" >FA<em>Q</em>s</a></li>
-                  <li><a href="clubsessions.html" title="Information on the sessions we run!" accesskey="c"><em>C</em>lub Sessions</a></li>
-                  <li><a href="racingteam.html" title="Our superb racing team!" accesskey="o"><em>O</em>ur Racing Team</a></li>
+                  <!--<li><a href="clubsessions.html" title="Information on the sessions we run!" accesskey="c"><em>C</em>lub Sessions</a></li>
+                  <li><a href="racingteam.html" title="Our superb racing team!" accesskey="o"><em>O</em>ur Racing Team</a></li>-->
                   <li class="divider"></li>
-                  <li><a href="accesskeyinfo.html" title="information on how to use access keys" accesskey="l"><em>L</em>ist of Access Keys</a></li>
+                  <li><a href="accesskeysinfo.html" title="information on how to use access keys" accesskey="k">List of Access <em>K</em>eys</a></li>
                   </ul>
             </ul>
             <!-- this displays the sign in sction on the right hand side of the navbar -->
           <ul class="nav pull-right">
           <li class="divider-vertical"></li>
-          <li><a href="login.php" title="Login" >Login</a></li>
+          <li><a href="login.php" title="Login"accesskey="l"><em>L</em>ogin</a></li>
          
             
-          <li><a href="register.php" title="Resgister" >Register</a></li>
+          <li><a href="register.php" title="Resgister"accesskey="r"><em>R</em>egister</a></li>
 
            
           </div><!--/.nav-collapse -->
@@ -87,7 +87,7 @@ $fgmembersite->LogOut();
 
     <div class="container">
 
-	<h2>You have logged out</h2>
+	<h2>You have logged out. Redirecting to home page in.........10 seconds</h2>
 	<p>
 	<a href='login.php'>Login Again</a>
 	</p>

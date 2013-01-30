@@ -75,19 +75,19 @@ if(isset($_POST['submitted']))
                 <a  href="#" class="dropdown-toggle" data-toggle="dropdown" accesskey="i" title="FAQ & Information">FAQ & <em>I</em>nformation <b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li><a href="faq.html" accesskey="q" title="FAQ Page" >FA<em>Q</em>s</a></li>
-                  <li><a href="clubsessions.html" title="Information on the sessions we run!" accesskey="c"><em>C</em>lub Sessions</a></li>
-                  <li><a href="racingteam.html" title="Our superb racing team!" accesskey="o"><em>O</em>ur Racing Team</a></li>
+                  <!--<li><a href="clubsessions.html" title="Information on the sessions we run!" accesskey="c"><em>C</em>lub Sessions</a></li>
+                  <li><a href="racingteam.html" title="Our superb racing team!" accesskey="o"><em>O</em>ur Racing Team</a></li>-->
                   <li class="divider"></li>
-                  <li><a href="accesskeyinfo.html" title="information on how to use access keys" accesskey="l"><em>L</em>ist of Access Keys</a></li>
+                  <li><a href="accesskeysinfo.html" title="information on how to use access keys" accesskey="k">List of Access <em>K</em>eys</a></li>
                   </ul>
             </ul>
             <!-- this displays the sign in sction on the right hand side of the navbar -->
           <ul class="nav pull-right">
           <li class="divider-vertical"></li>
-          <li><a href="login.php" title="Login" >Login</a></li>
+          <li><a href="login.php" title="Login"accesskey="l"><em>L</em>ogin</a></li>
          
             
-          <li><a href="register.php" title="Resgister" >Register</a></li>
+          <li><a href="register.php" title="Resgister"accesskey="r"><em>R</em>egister</a></li>
 
            
           </div><!--/.nav-collapse -->
@@ -112,7 +112,7 @@ if(isset($_POST['submitted']))
         <input type='text' name='email' id='email' value='<?php echo $fgmembersite->SafeDisplay('email') ?>' maxlength="50" /><br/>
         <span id='resetreq_email_errorloc' class='error'></span>
     </div>
-    <div class='short_explanation'>A link to reset your password will be sent to the email address</div>
+    <div class='short_explanation'>A link to reset your password will be sent to the email address, if not received, please check junk/spam folders.</div>
     <div class='container'>
         <input type='submit' name='Submit' value='Submit' />
     </div>
