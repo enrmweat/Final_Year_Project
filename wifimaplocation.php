@@ -73,7 +73,7 @@ if(!$fgmembersite->CheckLogin())
                   <!--<li><a href="clubsessions.html" title="Information on the sessions we run!" accesskey="c"><em>C</em>lub Sessions</a></li>
                   <li><a href="racingteam.html" title="Our superb racing team!" accesskey="o"><em>O</em>ur Racing Team</a></li>-->
                   <li class="divider"></li>
-                  <li><a href="accesskeysinfo.html" title="information on how to use access keys" accesskey="k">List of Access <em>K</em>eys</a></li>
+                  <li><a href="accesskeysinfo.html" title="Information on how to use access keys" accesskey="k">List of Access <em>K</em>eys</a></li>
                   </ul>
             </ul>
             <!-- this displays the sign in sction on the right hand side of the navbar -->
@@ -329,7 +329,7 @@ function setMarkers(map, locations) {
 
         <!-- this places a footer at the bottom of the page, it contains the "Copyright" and the Connect to facebook link -->
        <footer>
-        <p>&copy; Michael Weatherall 2012 &nbsp<center><i class="icon-thumbs-up icon-inverse"></i><a href="http://www.facebook.com/group.php?gid=2256597544">Find and Like us on Facebook!</center></a></p>
+        <p>&copy; Michael Weatherall 2012 &nbsp<center><i class="icon-thumbs-up icon-inverse"></i><a href="https://twitter.com/WifiLiverpool">Find and Like us on Facebook!</center></a></p>
       </footer>
 
     </div> <!-- /container -->
