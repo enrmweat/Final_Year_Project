@@ -98,10 +98,10 @@ if(!$fgmembersite->CheckLogin())
 		<h2>Welcome back <?= $fgmembersite->UserFullName(); ?>!</h2>
 		
 
-		<p><a href='change-pwd.php'>Change password</a></p>
+		<p><a href='change-pwd.php' class="btn btn-mini btn-success">Change password</a></p>
 
 		<br><br><br>
-		<p><a href='logout.php'>Logout</a></p>
+		<p><a href='logout.php' class="btn btn-small btn-danger">Logout</a></p>
 		</div>
 
 
@@ -109,7 +109,7 @@ if(!$fgmembersite->CheckLogin())
 
         <!-- this places a footer at the bottom of the page, it contains the "Copyright" and the Connect to facebook link -->
        <footer>
-        <p>&copy; Michael Weatherall 2012 &nbsp<center><i class="icon-thumbs-up icon-inverse"></i><a href="http://www.facebook.com/group.php?gid=2256597544">Find and Like us on Facebook!</center></a></p>
+         <p>&copy; Michael Weatherall 2012 &nbsp<a href="https://twitter.com/WifiLiverpool" target="_blank"><img src="assets/img/twitter-bird-light-bgs.png" title="Twitter Support Page" width="35px" height="35px"; alt="Twitter" align="right"></a></p>
       </footer>
 
     </div> <!-- /container -->

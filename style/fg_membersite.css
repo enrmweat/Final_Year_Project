@@ -3,6 +3,8 @@ Registration/Login Form by html-form-guide.com
 You can customize all the aspects of the form in this style sheet
 */
 
+
+
 #fg_membersite fieldset
 {
    width: 230px;
@@ -13,7 +15,10 @@ You can customize all the aspects of the form in this style sheet
 -khtml-border-radius: 10px;
 border-radius: 10px;
 position: relative;
-left: 400px;
+margin: 0 auto;
+
+
+
    
 }
 

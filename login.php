@@ -95,7 +95,7 @@ if(isset($_POST['submitted']))
     </div>
 
     <div class="container">
-    <H1>Website Currently Under Construction</h1>
+  
 
 <!-- Form Code Start -->
           <div id='fg_membersite'>
@@ -120,7 +120,7 @@ if(isset($_POST['submitted']))
           </div>
 
           <div class='container'>
-              <input type='submit' name='Submit' value='Submit' />
+              <input type='submit' name='Submit' class="btn btn-small btn-primary" value='Submit' />
           </div>
           <div class='short_explanation'><a href='reset-pwd-req.php' title="Forgot Password">Forgot Password?</a></div>
           <div class='short_explanation'><a href='reset-pwd-req.php' title="Register for Free!">Not Registered? Register Here! Its Free!</a></div>
@@ -133,7 +133,7 @@ if(isset($_POST['submitted']))
 
         <!-- this places a footer at the bottom of the page, it contains the "Copyright" and the Connect to facebook link -->
        <footer>
-        <p>&copy; Michael Weatherall 2012 &nbsp<center><i class="icon-thumbs-up icon-inverse"></i><a href="http://www.facebook.com/group.php?gid=2256597544">Find and Like us on Facebook!</center></a></p>
+         <p>&copy; Michael Weatherall 2012 &nbsp<a href="https://twitter.com/WifiLiverpool" target="_blank"><img src="assets/img/twitter-bird-light-bgs.png" title="Twitter Support Page" width="35px" height="35px"; alt="Twitter" align="right"></a></p>
       </footer>
 
     </div> <!-- /container -->

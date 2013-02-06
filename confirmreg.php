@@ -95,33 +95,33 @@ if(isset($_GET['code']))
 
     <div class="container">
 
-<h2>Confirm registration</h2>
-<p>
-Please enter the confirmation code in the box below
-</p>
+      <h2>Confirm registration</h2>
+      <p>
+      Please enter the confirmation code in the box below
+      </p>
 
-<!-- Form Code Start -->
-<div id='fg_membersite'>
-<form id='confirm' action='<?php echo $fgmembersite->GetSelfScript(); ?>' method='get' accept-charset='UTF-8'>
-<div class='short_explanation'>* required fields</div>
-<div><span class='error'><?php echo $fgmembersite->GetErrorMessage(); ?></span></div>
-<div class='container'>
-    <label for='code' >Confirmation Code:* </label><br/>
-    <input type='text' name='code' id='code' maxlength="50" /><br/>
-    <span id='register_code_errorloc' class='error'></span>
-</div>
-<div class='container'>
-    <input type='submit' name='Submit' value='Submit' />
-</div>
+      <!-- Form Code Start -->
+      <div id='fg_membersite'>
+      <form id='confirm' action='<?php echo $fgmembersite->GetSelfScript(); ?>' method='get' accept-charset='UTF-8'>
+      <div class='short_explanation'>* required fields</div>
+      <div><span class='error'><?php echo $fgmembersite->GetErrorMessage(); ?></span></div>
+      <div class='container'>
+          <label for='code' >Confirmation Code:* </label><br/>
+          <input type='text' name='code' id='code' maxlength="50" /><br/>
+          <span id='register_code_errorloc' class='error'></span>
+      </div>
+      <div class='container'>
+          <input type='submit' name='Submit' value='Submit' />
+      </div>
 
-</form>
+      </form>
 
 
- <hr>
+       <hr>
 
         <!-- this places a footer at the bottom of the page, it contains the "Copyright" and the Connect to facebook link -->
        <footer>
-        <p>&copy; Michael Weatherall 2012 &nbsp<center><i class="icon-thumbs-up icon-inverse"></i><a href="http://www.facebook.com/group.php?gid=2256597544">Find and Like us on Facebook!</center></a></p>
+         <p>&copy; Michael Weatherall 2012 &nbsp<a href="https://twitter.com/WifiLiverpool" target="_blank"><img src="assets/img/twitter-bird-light-bgs.png" title="Twitter Support Page" width="35px" height="35px"; alt="Twitter" align="right"></a></p>
       </footer>
 
     </div> <!-- /container -->

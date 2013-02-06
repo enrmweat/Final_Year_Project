@@ -93,7 +93,7 @@ if(isset($_POST['submitted']))
         </div>
       </div>
     </div>
-    <H1>Website Currently Under Construction</h1>
+   
 
    <div class="container">
 
@@ -131,7 +131,7 @@ if(isset($_POST['submitted']))
             <input type='password' name='password' id='password' maxlength="50" />
             </noscript>    
             <div id='register_password_errorloc' class='error' style='clear:both'></div>
-            <input type='submit' name='Submit' value='Submit' />
+            <input type='submit' name='Submit' class="btn btn-small btn-primary" value='Submit' />
         </div>
   
             
@@ -147,7 +147,7 @@ Uses the excellent form validation script from JavaScript-coder.com-->
       <hr>
 
       <footer>
-        <p>&copy; Michael Weatherall 2012 &nbsp<center><i class="icon-thumbs-up icon-inverse"></i><a href="http://www.facebook.com/group.php?gid=2256597544">Find and Like us on Facebook!</center></a></p>
+         <p>&copy; Michael Weatherall 2012 &nbsp<a href="https://twitter.com/WifiLiverpool" target="_blank"><img src="assets/img/twitter-bird-light-bgs.png" title="Twitter Support Page" width="35px" height="35px"; alt="Twitter" align="right"></a></p>
       </footer>
 
     </div>

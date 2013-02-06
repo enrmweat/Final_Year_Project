@@ -82,10 +82,9 @@
     </div>
 
     
-    <a class="pull-right" href="login-home.php" title="Your Account" accesskey="m">My Account</a>
+    <a class="pull-right btn btn-mini btn-info" href="login-home.php" title="Your Account" accesskey="m">My Account</a>
 
 
-    <H1>Website Currently Under Construction</h1>
 
     <div class="container">
 
@@ -157,11 +156,12 @@
     
       <h2 class="featurette-heading">Send me a message!</h2>
       Let me know what you think of the site, or if you have any general questions please do not hesitate to contact me!.
-      You can contact me in two ways, through the form below, or through direct email (see below link).
+      You can contact me in two ways, through the form below, or through direct email (see below).
       <!--modal start-->
       <!--modal button-->
       <br>
-      <a href="#myModal" role="button" class="btn" data-toggle="modal">Contact Form</a>
+      <br>
+      <a href="#myModal" role="button" class="btn btn-medium btn-primary" data-toggle="modal">Contact Form</a>
       <!--modal body-->
       <div id="myModal" class="modal hide fade" tadindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" style="display: block;">
         <div class="modal-header">
@@ -179,30 +179,30 @@
           <input type="text" name="cf_email"><br>
           Message<br>
           <textarea name="cf_message"></textarea><br>
-          <input type="submit" value="Send">
-          <input type="reset" data-dismiss="modal" value="Close">
+          <input type="submit" class="btn btn-mini btn-success" value="Send">
+          <input type="reset" data-dismiss="modal" class="btn btn-mini btn-danger" value="Close">
         </form>
         </body>
           </div>
         </div>
   
       <br>
-      Or send me an email!.
+      <br>
+      Or send me an email:
       <br>
       <a href="mailto:mike_weatherall@live.co.uk" title="e-mail">mike_weatherall@live.co.uk</a>
       </div></center>
-    </div>
-  </div>
 
-<hr>
+
+      <hr>
 
         <!-- this places a footer at the bottom of the page, it contains the "Copyright" and the Connect to facebook link -->
        <footer>
-        <p>&copy; Michael Weatherall 2012 &nbsp<center><i class="icon-thumbs-up icon-inverse"></i><a href="http://www.facebook.com/group.php?gid=2256597544">Find and Like us on Facebook!</center></a></p>
+         <p>&copy; Michael Weatherall 2012 &nbsp<a href="https://twitter.com/WifiLiverpool" target="_blank"><img src="assets/img/twitter-bird-light-bgs.png" title="Twitter Support Page" width="35px" height="35px"; alt="Twitter" align="right"></a></p>
       </footer>
 
 
-</div><!--end of container-->
+    </div><!--end of container-->
 
      
 

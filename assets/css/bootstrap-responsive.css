@@ -410,14 +410,14 @@
     display: none;
   }
   .navbar .nav .nav-header {
-    color: #999999;
+    color: #FFFFFF;
     text-shadow: none;
   }
   .navbar .nav > li > a,
   .navbar .dropdown-menu a {
     padding: 6px 15px;
     font-weight: bold;
-    color: #999999;
+    color: #000000;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -427,7 +427,8 @@
   }
   .navbar .nav > li > a:hover,
   .navbar .dropdown-menu a:hover {
-    background-color: #222222;
+    background-color: #0088CC;
+    color: #FFFFFF;
   }
   .navbar .dropdown-menu {
     position: static;

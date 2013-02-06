@@ -13,6 +13,7 @@ if($fgmembersite->ResetPassword())
 <head>
       <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
       <title>Liverpool WiFi | Reset Password</title>
+      <meta http-equiv="refresh" content="5; URL=index.php">
       <link rel="STYLESHEET" type="text/css" href="style/fg_membersite.css" />
       <script type='text/javascript' src='scripts/gen_validatorv31.js'></script>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -95,9 +96,9 @@ if($fgmembersite->ResetPassword())
 <?php
 if($success){
 ?>
-<h2>Password is Reset Successfully</h2>
+<h2>Password has been reset successfully</h2>
 Your new password has been sent to your email address. Once logged in, it is recommended you change the default password to something you know. (If 
-no email has been received, please check your spam/junk folder).
+no email has been received, please check your spam/junk folder).....You will be redirected to the home page in.....5 seconds.
 <?php
 }else{
 ?>
@@ -112,7 +113,7 @@ no email has been received, please check your spam/junk folder).
 
         <!-- this places a footer at the bottom of the page, it contains the "Copyright" and the Connect to facebook link -->
        <footer>
-        <p>&copy; Michael Weatherall 2012 &nbsp<center><i class="icon-thumbs-up icon-inverse"></i><a href="http://www.facebook.com/group.php?gid=2256597544">Find and Like us on Facebook!</center></a></p>
+       <p>&copy; Michael Weatherall 2012 &nbsp<a href="https://twitter.com/WifiLiverpool" target="_blank"><img src="assets/img/twitter-bird-light-bgs.png" title="Twitter Support Page" width="35px" height="35px"; alt="Twitter" align="right"></a></p>
       </footer>
 
     </div> <!-- /container -->

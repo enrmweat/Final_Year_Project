@@ -10,7 +10,7 @@
 body{
 	background-image: url(assets/img/ricepaper.png);
 
-	color: #888888;
+	color: #000000;
 
 
 }
@@ -22,7 +22,7 @@ body{
 /* this defines the hero unit background image and text colour*/
 .hero-unit {
 	/*background-image: url(assets/img/liverpool.jpg);*/
-	color: #AAAAAA;
+	color: #000000;
 	
 
 }

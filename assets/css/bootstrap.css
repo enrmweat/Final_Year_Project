@@ -151,11 +151,11 @@ body {
   background-color: #ffffff;
 }
 a {
-  color: #AAAAAA;
+  color: #0088CC;
   text-decoration: none;
 }
 a:hover {
-  color: #666666;
+  color: #0000cc;
   text-decoration: underline;
 }
 .img-rounded {
@@ -3462,7 +3462,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav > li > a {
   /*float:left;*/
   padding: 10px 15px 10px;
-  color:;
+  color:#000000;
   text-decoration: none;
   text-shadow: 0 1px 0 #ffffff;
 }
@@ -3472,15 +3472,15 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover {
   background-color: transparent;
-  color: ;
+  color: #555555;
   text-decoration: none;
 }
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:hover,
 .navbar .nav > .active > a:focus {
-  color: #555555;
+  color: #000000;
   text-decoration: none;
-  background-image: url(assets/img/egg_shell.png);
+  /*background-image: url(assets/img/egg_shell.png);*/
   /*background-color: #048ac2;*/
   -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
   -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
@@ -3492,7 +3492,7 @@ input[type="submit"].btn.btn-mini {
   padding: 7px 10px;
   margin-left: 5px;
   margin-right: 5px;
-  color: #ffffff;
+  color: #000000;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);/*
   background-color: #93c9df;
   background-image: -moz-linear-gradient(top, #f2f2f2, #048ac2);
@@ -4561,17 +4561,17 @@ a.thumbnail:hover {
   clear: both;
   font-weight: normal;
   line-height: 20px;
-  color: #AAAAAA;
+  color: #000000;
   white-space: nowrap;
 }
 .dropdown-menu li > a:hover,
 .dropdown-menu li > a:focus,
 .dropdown-submenu:hover > a {
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
   
-  background-color: #aaaaaa;
-  background-color: #aaaaaa;/*
+  background-color: #0088cc;
+  background-color: #0088cc;/*
   background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
   background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
